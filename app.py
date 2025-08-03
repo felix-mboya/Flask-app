@@ -8,6 +8,8 @@ load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
+application = app 
+
 
 EMAIL_HOST = os.getenv('EMAIL_HOST')
 EMAIL_PORT = int(os.getenv('EMAIL_PORT', 587))
